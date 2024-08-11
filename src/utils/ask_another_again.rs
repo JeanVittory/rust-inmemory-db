@@ -1,7 +1,7 @@
 
 use std::io::{self, Write};
 
-pub fn init(mut should_ask_another: &mut String) -> &String{
+pub fn init(should_ask_another: &mut String) -> &String{
     if should_ask_another.trim().to_uppercase() != "N" && should_ask_another.trim().to_uppercase() != "Y" {
         let mut should_ask_again =  true;
         while should_ask_again {
